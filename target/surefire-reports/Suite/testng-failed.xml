@@ -6,13 +6,4 @@
       <class name="Test.Test.Test1"/>
     </classes>
   </test> <!-- Test -->
-  <test name="Test(failed)">
-    <classes>
-      <class name="Test.Test.Test1">
-        <methods>
-          <include name="test"/>
-        </methods>
-      </class> <!-- Test.Test.Test1 -->
-    </classes>
-  </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

@@ -14,6 +14,8 @@ public class Test1 {
 	public void test() throws InterruptedException {
 		System.out.println("Test");
 		
+
+		//System.setProperty("webdriver.gecko.driver","D:\\ArcSelenium\\DriverFiles\\geckodriver.exe");
 		System.setProperty("webdriver.gecko.driver","/opt/Katalon_Studio/Katalon_Studio_Linux_64-6.1.1/configuration/resources/drivers/firefox_linux64/geckodriver");
 		Thread.sleep(2000);
 		System.setProperty(FirefoxDriver.SystemProperty.DRIVER_USE_MARIONETTE,"true");
@@ -39,7 +41,8 @@ public class Test1 {
 			FirefoxOptions option = new FirefoxOptions();
 			option.setProfile(profile);
 			driver = new FirefoxDriver(option);
-			driver.get("facebook.com");
+			driver.get("https://www.google.com/");
+			System.out.println("Test PAss");
 	}
 
 }
