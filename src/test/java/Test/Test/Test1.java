@@ -11,7 +11,7 @@ import org.testng.annotations.Test;
 public class Test1 {
 	public static WebDriver driver;
 	@Test
-	public void test() throws InterruptedException {
+	public void test() throws Exception {
 		System.out.println("Test");
 		
 
@@ -42,7 +42,7 @@ public class Test1 {
 			option.setProfile(profile);
 			driver = new FirefoxDriver(option);
 			driver.get("https://www.google.com/");
-			System.out.println("Test PAss");
+			System.out.println("Test Pass");
 	}
 
 }
